@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Chess Board Design using PHP</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -46,7 +46,6 @@
     <h2> Classical way with Table</h2>
     <p><a href="https://8subjects.com/php-chess-board">Download Source Code Here</a></p>
     <!-- chess board starts -->
-    <!-- <table class="table" cellspacing="0px" cellpadding="0px" border="1px" bordercolor="green"> -->
     <table class="table">
       <?php
       $row=$total=$col=0;
