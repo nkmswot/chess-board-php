@@ -22,7 +22,6 @@
     }
     .black{
     background:green;
-
     }
     .white{
     background:white;
@@ -44,33 +43,31 @@
   <body>
     <h1>Chess Board Design using PHP</h1>
     <h2> Classical way with Table</h2>
-    <p><a href="https://8subjects.com/php-chess-board">Download Source Code Here</a></p>
+    <p><a href="https://8subjects.com/chess-board-design-php/">Download Source Code Here</a></p>
     <!-- chess board starts -->
     <table class="table">
       <?php
       $row=$total=$col=0;
-
       for($row=1;$row<=8;$row++)
         {
-      echo "<tr>";
+        echo "<tr>";
         for($col=1;$col<=8;$col++)
-            {
-        $total=$row+$col;
-
-        if($total%2==0) {
-        echo "<td height='50px' width='50px' bgcolor='#FFFFFF'></td>";
+        {
+            $total=$row+$col;
+              if($total%2==0) {
+                echo "<td height='50px' width='50px' bgcolor='#FFFFFF'></td>";
+              }
+              else{
+                echo "<td height='50px' width='50px' bgcolor='green'></td>";
+            }
         }
-        else{
-        echo "<td height='50px' width='50px' bgcolor='green'></td>";
+        echo "</tr>";
         }
-        }
-      echo "</tr>";
-      }
       ?>
     </table>
     <br /><br />
     <h2> Modern Way with Div</h2>
-    <p><a href="http://8subjects.com/php-chess-board">Download Source Code Here</a></p>
+    <p><a href="https://8subjects.com/chess-board-design-php/">Download Source Code Here</a></p>
     <!-- chess board using div starts -->
     <div id="board">
       <?php
@@ -98,7 +95,7 @@
     <!-- chess board using div ends -->
     <br /><br />
     <h2>Chess Board with Chess Pieces Design using PHP &amp; <a href="https://en.wikipedia.org/wiki/Chess_symbols_in_Unicode" target="_blank">Unicode</a></h2>
-    <p><a href="http://8subjects.com/php-chess-board">Download Source Code Here</a></p>
+    <p><a href="https://8subjects.com/chess-board-design-php/">Download Source Code Here</a></p>
     <!-- chess board with pieces starts -->
     <table class="table">
       <?php
